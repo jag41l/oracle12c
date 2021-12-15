@@ -1,7 +1,10 @@
 version: 3.3
 services:
   oracle:
-    image: jag41l/oracle12_c
+    image: jag41l/oracle_12c
     ports:
      - 1521:1521
-     
+    volumes:
+     - data:/u01/app/oracle
+volumes:
+  data:
